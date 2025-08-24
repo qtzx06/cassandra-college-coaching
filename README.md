@@ -1,69 +1,46 @@
-# React + TypeScript + Vite
+# Cassandra College Coaching
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page for a college coaching service, built with Vite, React, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Project Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+| Desktop | Mobile |
+| :---: | :---: |
+| <img src="src/assets/demo/landing.png" alt="Desktop Demo" width="1120"> | <img src="src/assets/demo/mobile.png" alt="Mobile Demo" width="250"> |
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Responsive Design**: Fully functional and visually appealing on all devices, from mobile phones to desktops.
+- **Modern UI/UX**: Smooth animations and a clean, professional layout built with Framer Motion.
+- **Glassmorphism Effects**: Sleek, transparent UI elements for a cutting-edge look.
+- **Dynamic Content**: Features an animated typing background to engage users.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- [**Vite**](https://vitejs.dev/) - Next-generation frontend tooling.
+- [**React**](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [**TypeScript**](https://www.typescriptlang.org/) - Typed JavaScript for robust applications.
+- [**Tailwind CSS**](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development.
+- [**Framer Motion**](https://www.framer.com/motion/) - A production-ready motion library for React.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+To run this project locally, follow these steps:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/qtzx06/cassandra-college-coaching.git
+    cd cassandra-college-coaching
+    ```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+
+The application will be available at `http://localhost:5173`.
