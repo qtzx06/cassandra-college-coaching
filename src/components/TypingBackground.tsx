@@ -5,7 +5,7 @@ const essayText = `If I describe to you my life, you’d assume I’m a spy. Aft
 
 const TypingBackground: React.FC = () => {
   return (
-    <div className="absolute inset-20 z-0 p-12 md:p-24 overflow-hidden">
+    <div className="absolute inset-0 z-0 py-12 md:py-24 overflow-hidden">
       <TypeAnimation
         sequence={[essayText]}
         wrapper="div"
