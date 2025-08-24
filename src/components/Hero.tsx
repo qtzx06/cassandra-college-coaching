@@ -89,7 +89,7 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: 'easeInOut' }}
-          className="text-lg md:text-x1 text-gray-600 mt-12 mb-20 max-w-3xl mx-auto"
+          className="text-lg md:text-x1 text-gray-600 mt-12 mb-10 max-w-3xl mx-auto"
         >
           Get personalized essay help from an 8-Ivy League accepted coach and craft an application that stands out.
         </motion.p>

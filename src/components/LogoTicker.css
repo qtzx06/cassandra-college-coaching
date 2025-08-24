@@ -58,6 +58,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 15)); /* (Container width) * (number of original items) */
+    transform: translateX(calc(-250px * 10)); /* (Container width) * (number of original items) */
   }
 }

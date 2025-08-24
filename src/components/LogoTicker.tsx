@@ -14,12 +14,12 @@ import YaleLogo from '../assets/logos/Yale_University_logo.svg?react';
 
 const logos = [
   { Component: BrownLogo, alt: 'Brown University', width: 2000 },
+  { Component: UcbLogo, alt: 'UC Berkeley', width: 180 },
   { Component: ColumbiaLogo, alt: 'Columbia University', width: 200 },
   { Component: CornellLogo, alt: 'Cornell University', width: 150 },
   { Component: MitLogo, alt: 'MIT', width: 1000 },
   { Component: NorthwesternLogo, alt: 'Northwestern University', width: 200 },
   { Component: StanfordLogo, alt: 'Stanford University', width: 180 },
-  { Component: UcbLogo, alt: 'UC Berkeley', width: 180 },
   { Component: UclaLogo, alt: 'UCLA', width: 150 },
   { Component: UchicagoLogo, alt: 'University of Chicago', width: 200 },
   { Component: YaleLogo, alt: 'Yale University', width: 150 },
