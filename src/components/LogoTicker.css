@@ -1,0 +1,63 @@
+.ticker-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.ticker-container::before,
+.ticker-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 200px; /* Increased width for a stronger fade */
+  z-index: 1;
+  pointer-events: none; /* Make sure they don't block mouse events */
+}
+
+.ticker-container::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.ticker-container::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+
+.ticker-track {
+  display: flex;
+  /* Total width is calculated dynamically in the component if needed, 
+     but a large value + animation works well for tickers */
+  width: calc(220px * 30); /* (Avg item width) * (number of items * 2) */
+  animation: ticker 80s linear infinite;
+}
+
+.ticker-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem; /* Increased padding for more spacing */
+  width: 250px; /* Give each item a consistent container size */
+}
+
+.logo-svg {
+  height: 65px; /* Set a consistent height */
+  width: auto; /* Width will be set by inline style to maintain aspect ratio */
+  color: rgb(10, 38, 71);
+}
+
+/* Force fill color on all path elements within the SVG */
+.logo-svg path {
+  fill: currentColor !important;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 15)); /* (Container width) * (number of original items) */
+  }
+}
