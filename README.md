@@ -6,7 +6,7 @@ A modern, responsive landing page for a college coaching service, built with Vit
 
 | Desktop | Mobile |
 | :---: | :---: |
-| <img src="src/assets/demo/landing.png" alt="Desktop Demo" width="1120"> | <img src="src/assets/demo/mobile.png" alt="Mobile Demo" width="250"> |
+| <img src="src/assets/demo/landing.png" alt="Desktop Demo" width="600"> | <img src="src/assets/demo/mobile.png" alt="Mobile Demo" width="200"> |
 
 ## Features
 
