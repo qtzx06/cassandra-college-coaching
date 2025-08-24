@@ -1,6 +1,6 @@
 # Cassandra College Coaching
 
-A modern, responsive landing page for a college coaching service, built with Vite, React, and Tailwind CSS.
+A modern, responsive landing page for Cassandra Edu Inc.
 
 ## Project Demo
 
