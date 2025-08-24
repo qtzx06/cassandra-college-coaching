@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { LuSend } from 'react-icons/lu';
 
 const Contact: React.FC = () => {
   return (
@@ -52,9 +53,10 @@ const Contact: React.FC = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-brand-primary text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-brand-light transition-colors shadow-lg hover:shadow-xl"
+                className="inline-flex items-center gap-3 bg-white/50 backdrop-blur-md border border-white/60 text-brand-darkest px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white/70 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 Submit
+                <LuSend className="h-5 w-5" />
               </button>
             </div>
           </form>

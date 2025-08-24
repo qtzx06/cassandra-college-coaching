@@ -12,6 +12,9 @@ export default {
         'brand-primary': '#205295',
         'brand-light': '#2C74B3',
       },
+      fontFamily: {
+        'lora': ['"Lora"', 'serif'],
+      },
     },
   },
   plugins: [],

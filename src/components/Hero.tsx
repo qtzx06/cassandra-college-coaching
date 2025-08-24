@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { LuBookOpen, LuPencil, LuGraduationCap, LuLightbulb } from 'react-icons/lu';
+import { LuBookOpen, LuPencil, LuGraduationCap, LuLightbulb, LuArrowRight } from 'react-icons/lu';
 import LogoTicker from './LogoTicker';
 import TypingBackground from './TypingBackground';
 
@@ -81,15 +81,15 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeInOut' }}
-          className="text-2xl md:text-8xl font-extrabold text-brand-darkest mb-4"
+          className="text-5xl md:text-9xl font-lora font-extrabold text-brand-darkest mb-4"
         >
-        Unlock Your Dream College
+        Unlock Your Dream College Now
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: 'easeInOut' }}
-          className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto"
+          className="text-lg md:text-x1 text-gray-600 mt-12 mb-20 max-w-3xl mx-auto"
         >
           Get personalized essay help from an 8-Ivy League accepted coach and craft an application that stands out.
         </motion.p>
@@ -98,9 +98,10 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.4, ease: 'easeOut' }}
           href="#contact"
-          className="bg-brand-primary text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-brand-light transition-colors shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
+          className="inline-flex items-center gap-3 bg-white/30 backdrop-blur-md border border-white/40 text-brand-darkest px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
         >
           Start Your Journey
+          <LuArrowRight className="h-5 w-5" />
         </motion.a>
       </div>
       

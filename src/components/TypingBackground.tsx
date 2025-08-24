@@ -10,7 +10,7 @@ const TypingBackground: React.FC = () => {
         sequence={[essayText]}
         wrapper="div"
         speed={69}
-        className="text-4xl md:text-7xl font-extrabold text-white opacity-15 columns-2 md:columns-3 lg:columns-1 gap-8"
+        className="text-6xl md:text-8xl font-extrabold text-white opacity-15 columns-1 md:columns-1 lg:columns-1 gap-8"
         cursor={false}
       />
     </div>
